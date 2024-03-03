@@ -1,4 +1,16 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+.vscode
+.idea
+
+# Ignore additional files in .idea directory
+*.iml
+
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
 
 # dependencies
 /node_modules
@@ -23,6 +35,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.yarn-integrity
 
 # local env files
 .env*.local
